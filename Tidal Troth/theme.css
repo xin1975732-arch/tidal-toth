@@ -1,0 +1,114 @@
+/* 潮信 · theme.css —— 只属于这本书的颜色、字体、封面插画
+   底色三种：tao 蜜桃（浅色默认）· ning 柠檬（自选）· ye 夜航（深色默认）
+   :root 写浅色；深色写两遍：一遍跟随系统（没自选时），一遍给 [data-read="ye"]。 */
+
+/* ---------- 色板：蜜桃（默认浅色） ---------- */
+:root {
+  --bg: #FFF1E6;
+  --bg-2: #FFE3D0;
+  --ink: #3A1E17;
+  --ink-2: #6B3F33;
+  --ink-3: #98685A;
+  --rule: #F3C6AC;
+  --acc: #FF6A2B;      /* 橘子：主色 */
+  --acc-ink: #C2410C;  /* 橘色小字 */
+  --acc2: #FF3D7F;       /* 热粉 */
+  --acc2-ink: #C81E5B;
+  --hi: #FFC23A;       /* 柠檬黄 */
+  --alt: #4D8EF7;       /* 那块布的蓝：比海水浅一点，比天深一点 */
+  --alt-ink: #2457B8;
+  --ok: #23B58A;
+  --zhu: #D7263D;       /* 钱庄朱笔 */
+  --zhu-line: rgba(215, 38, 61, .28);
+  --on-acc: #FFFFFF;
+  --paper: #FFF9F2;
+  --bar: rgba(255, 241, 230, .88);
+  --panel: #FFF8F1;
+  --msg-l: #FFD8C0;
+  --msg-r: #FFD2E1;
+  --sel: rgba(255, 61, 127, .2);
+  --hard: #3A1E17;      /* 贴纸的硬阴影 */
+  --shadow: 0 18px 40px -20px rgba(150, 60, 20, .5);
+  --glow: rgba(255, 194, 58, .28);
+  --on-hi: #3A1E17;
+  --scene-1: var(--hi); --scene-2: var(--acc); --scene-3: var(--acc2); --scene-4: var(--alt);
+
+  /* 封面插画 */
+  --c-sky: #FFD9BF;
+  --c-quay: #3A1E17;
+
+
+  --display: "ZCOOL QingKe HuangYou", "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --hand: "Ma Shan Zheng", "Kaiti SC", "STKaiti", "KaiTi", serif;
+  color-scheme: light;
+}
+
+/* ---------- 夜航：跟随系统深色（读者没自己选的时候） ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-read]) {
+    --bg: #1E1420; --bg-2: #2A1C2B; --ink: #F7E6DA; --ink-2: #D9BAA9; --ink-3: #A88A7C;
+    --rule: #47313F; --acc: #FF8547; --acc-ink: #FFA06B; --acc2: #FF5E95; --acc2-ink: #FF8BB0;
+    --hi: #FFD166; --alt: #6FA7FF; --alt-ink: #9CC2FF; --ok: #3CCFA0; --zhu: #FF6B6B; --zhu-line: rgba(255, 107, 107, .3);
+    --on-acc: #1E1420; --paper: #2A1D2A; --bar: rgba(30, 20, 32, .88); --panel: #2A1D2A;
+    --msg-l: #4B2C22; --msg-r: #4B2336; --sel: rgba(255, 94, 149, .3); --hard: #0E080F;
+    --shadow: 0 18px 40px -18px rgba(0, 0, 0, .8); --glow: rgba(255, 133, 71, .14);
+    --c-sky: #3B2338; --c-quay: #0E080F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]:not([data-read]),
+:root[data-read="ye"] {
+  --bg: #1E1420; --bg-2: #2A1C2B; --ink: #F7E6DA; --ink-2: #D9BAA9; --ink-3: #A88A7C;
+  --rule: #47313F; --acc: #FF8547; --acc-ink: #FFA06B; --acc2: #FF5E95; --acc2-ink: #FF8BB0;
+  --hi: #FFD166; --alt: #6FA7FF; --alt-ink: #9CC2FF; --ok: #3CCFA0; --zhu: #FF6B6B; --zhu-line: rgba(255, 107, 107, .3);
+  --on-acc: #1E1420; --paper: #2A1D2A; --bar: rgba(30, 20, 32, .88); --panel: #2A1D2A;
+  --msg-l: #4B2C22; --msg-r: #4B2336; --sel: rgba(255, 94, 149, .3); --hard: #0E080F;
+  --shadow: 0 18px 40px -18px rgba(0, 0, 0, .8); --glow: rgba(255, 133, 71, .14);
+  --c-sky: #3B2338; --c-quay: #0E080F;
+  color-scheme: dark;
+}
+
+/* ---------- 柠檬（读者自选） ---------- */
+:root[data-read="ning"] {
+  --bg: #FFF7D6; --bg-2: #FFEDAA; --ink: #33240E; --ink-2: #634A22; --ink-3: #8F7442;
+  --rule: #F0D98C; --acc: #FF6A2B; --acc-ink: #B3460A; --acc2: #FF3D7F; --acc2-ink: #C01A55;
+  --hi: #FFB800; --alt: #4D8EF7; --alt-ink: #2457B8; --ok: #1FA57E; --zhu: #D7263D; --zhu-line: rgba(215, 38, 61, .28);
+  --on-acc: #FFFFFF; --paper: #FFFCEE; --bar: rgba(255, 247, 214, .88); --panel: #FFFBEA;
+  --msg-l: #FFE1B8; --msg-r: #FFD6E4; --sel: rgba(255, 106, 43, .2); --hard: #33240E;
+  --shadow: 0 18px 40px -20px rgba(120, 90, 10, .45); --glow: rgba(255, 184, 0, .25);
+  --c-sky: #FFE79A; --c-quay: #33240E;
+  color-scheme: light;
+}
+/* 读者在深色系统里明确选了“蜜桃” */
+:root[data-read="tao"] { color-scheme: light; }
+
+
+.c-sky { fill: var(--c-sky); }
+.c-sun { fill: var(--hi); }
+.c-quay { fill: var(--c-quay); }
+.c-crane { fill: var(--c-quay); }
+.c-sea { fill: var(--alt); }
+.c-tide { fill: none; stroke: #FFFFFF; stroke-width: 2.6; stroke-linecap: round; opacity: .92; }
+.c-tang { fill: var(--acc); }
+.c-hot { fill: var(--acc2); }
+.c-sun-box { fill: var(--hi); }
+.c-leaf { fill: var(--ok); }
+.c-blue { fill: var(--alt); }
+.c-edge { fill: none; stroke: var(--c-quay); stroke-width: 2; }
+.c-hull { fill: var(--c-quay); }
+.c-sail { fill: #FFFFFF; }
+.c-flag { fill: var(--acc2); }
+.c-funnel { fill: var(--acc); }
+.c-stripe { fill: var(--acc2); }
+.c-edge-s { stroke: var(--c-quay); stroke-width: 2; }
+.c-wake { fill: none; stroke: #FFFFFF; stroke-width: 2.6; stroke-linecap: round; }
+.puff { fill: #FFFFFF; opacity: .85; transform-box: fill-box; transform-origin: 50% 50%; animation: puff 4.5s ease-out infinite; }
+.puff.p2 { animation-delay: -1.5s; }
+.puff.p3 { animation-delay: -3s; }
+@keyframes puff { 0% { transform: translate(-14px, 18px) scale(.5); opacity: 0; } 25% { opacity: .9; } 100% { transform: translate(8px, -10px) scale(1.15); opacity: 0; } }
+.sway { transform-box: fill-box; transform-origin: 50% 0; animation: sway 6s ease-in-out infinite; }
+.drift { animation: drift 7s linear infinite; }
+.bob { transform-box: fill-box; transform-origin: 50% 50%; animation: bob 4.5s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-2.5deg); } 50% { transform: rotate(2.5deg); } }
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(-30px); } }
+@keyframes bob { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(3px) rotate(1.5deg); } }

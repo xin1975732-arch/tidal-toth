@@ -1,0 +1,52 @@
+<svg viewBox="0 0 320 400" role="img" aria-label="封面：黄昏的港口，龙门吊吊着一只粉色集装箱，海面上绣着白色的潮水，一只小船船头朝着岸">
+  <defs>
+    <pattern id="rib" width="7" height="10" patternUnits="userSpaceOnUse"><rect width="2.2" height="10" fill="rgba(0,0,0,.16)"/></pattern>
+  </defs>
+  <rect class="c-sky" width="320" height="400"/>
+  <circle class="c-sun" cx="236" cy="104" r="50"/>
+  <g class="c-crane">
+    <rect x="34" y="58" width="9" height="196"/>
+    <rect x="132" y="58" width="9" height="196"/>
+    <rect x="18" y="50" width="196" height="11" rx="2"/>
+    <rect x="170" y="61" width="26" height="17" rx="2"/>
+    <rect x="86" y="61" width="2.5" height="54"/>
+  </g>
+  <g class="sway">
+    <rect x="86" y="61" width="2.5" height="1" fill="none"/>
+    <rect class="c-hot" x="60" y="114" width="56" height="27" rx="2"/>
+    <rect x="60" y="114" width="56" height="27" rx="2" fill="url(#rib)"/>
+    <rect class="c-edge" x="60" y="114" width="56" height="27" rx="2"/>
+  </g>
+  <g>
+    <rect class="c-tang" x="6" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-sun-box" x="70" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-leaf" x="134" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-blue" x="38" y="198" width="62" height="27" rx="2"/>
+    <rect class="c-tang" x="102" y="198" width="62" height="27" rx="2"/>
+    <rect x="6" y="227" width="190" height="27" fill="url(#rib)"/>
+    <rect x="38" y="198" width="126" height="27" fill="url(#rib)"/>
+    <rect class="c-edge" x="6" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-edge" x="70" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-edge" x="134" y="227" width="62" height="27" rx="2"/>
+    <rect class="c-edge" x="38" y="198" width="62" height="27" rx="2"/>
+    <rect class="c-edge" x="102" y="198" width="62" height="27" rx="2"/>
+  </g>
+  <rect class="c-quay" x="0" y="254" width="214" height="9"/>
+  <rect class="c-sea" x="0" y="263" width="320" height="137"/>
+  <rect class="c-sea" x="214" y="254" width="106" height="9"/>
+  <g class="drift">
+    <path class="c-tide" d="M-30 286 q7.5 -7 15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0"/>
+    <path class="c-tide" d="M-30 314 q7.5 -7 15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0"/>
+    <path class="c-tide" d="M-30 346 q7.5 -7 15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0"/>
+    <path class="c-tide" d="M-30 378 q7.5 -7 15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0"/>
+  </g>
+  <g class="bob">
+    <path class="c-wake" d="M292 334 q9 -4 18 0 M288 342 q12 -4 24 0"/>
+    <path class="c-sail c-edge-s" d="M245 268 L205 314 H245 Z"/>
+    <path class="c-sail c-edge-s" d="M251 262 L251 314 H286 Z"/>
+    <rect x="246" y="258" width="3.4" height="62" class="c-hull"/>
+    <path class="c-flag" d="M249.4 258 l15 5 -15 5 Z"/>
+    <path class="c-hull" d="M180 318 H296 L284 342 H204 Z"/>
+    <path class="c-stripe" d="M186 324 H294 L292 329 H192 Z"/>
+  </g>
+</svg>
